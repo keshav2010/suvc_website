@@ -13,12 +13,13 @@ $(window).load(function(){
 function handleTopNavAnimation() {
 	var top=$(window).scrollTop();
 
-	if(top>10){
-		$('#site-nav').addClass('navbar-solid'); 
-	}
-	else{
-		$('#site-nav').removeClass('navbar-solid'); 
-	}
+	//disable transparent->opaque transition
+	//if(top>10){
+		//$('#site-nav').addClass('navbar-solid');
+	//}
+	//else{
+		//$('#site-nav').removeClass('navbar-solid');
+	//}
 }
 
 /*
@@ -27,7 +28,7 @@ function handleTopNavAnimation() {
 
 $('#registration-form').submit(function(e){
     e.preventDefault();
-    
+
     var postForm = { //Fetch form data
             'fname'     : $('#registration-form #fname').val(),
             'lname'     : $('#registration-form #lname').val(),
