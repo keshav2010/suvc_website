@@ -362,6 +362,27 @@ ul li {
   font-weight: 300;
 }
 
+.style-box-1
+{
+  border-style: solid;
+  padding:15px;
+  border-width: 6px;
+  margin-bottom: 10px;
+  border-color: rgb(130,130,130);
+  color:black;
+  height: 60vh;
+  text-align: center;
+}
+.style-box-1 > h2
+{
+  text-align: center;
+}
+.style-box-1 > p
+{
+  font-size: 1em;
+  font-weight: 501;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
