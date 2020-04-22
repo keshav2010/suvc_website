@@ -2,7 +2,6 @@
 .carousel
 {
   z-index:-1;
-  height:660px;
 }
 .carousel-inner{
   height: 100%;
@@ -10,7 +9,6 @@
 .carousel-inner div img /*content */
 {
   width:100%;
-  margin-top:-180px;
   opacity: 0.5;
 }
 
@@ -61,7 +59,6 @@
   .carousel-inner div img /*content */
   {
     width:100%;
-    margin:0px;
     opacity: 0.5;
   }
   #intro_heading_box
