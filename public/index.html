@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/infinite-slider.css">
     <link rel="stylesheet" href="assets/css/style_boxes.css">
+
+    <link rel="stylesheet" href="assets/third_party/css3_animateIt/css/animations.css">
+    <link rel="stylesheet" href="assets/third_party/css3_animateIt/css/animations-ie-fix.css">
     <link rel="icon" href="assets/images/suvc.png" type="image/gif" sizes="16x16">
 </head>
 
@@ -73,7 +76,7 @@
 
     <header id='site-header'  class="site-header valign-center">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row animatedParent">
             <div id="slider" class="carousel slide" data-ride="carousel" data-interval="3000" style="position: static; display:block;">
               <ol class="carousel-indicators">
                 <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -100,7 +103,7 @@
                 <span class="sr-only">Next</span>
               </a>
             </div> <!-- carousel end -->
-            <div style="position:absolute; left:50%; top:40%; color:white;">
+            <div style="position:absolute; left:50%; top:40%; color:white;" class="animated growIn">
               <div id="intro_heading_box" style="position:relative; left:-50%; background-color:rgba(35,52,85, 0.89); padding-left:20px; padding-right:20px; padding-top:10px; padding-bottom:20px; font-size:20px">
               <h2>SUVC - 2021</h2>
               <h1>SAUR URJA VEHICLE CHALLENGE</h1>
@@ -113,7 +116,7 @@
         </div> <!-- row end -->
       </div> <!-- container fluid end -->
     </header>
-    <section id="about" class="section about">
+    <section id="about" class="section about animatedParent">
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
@@ -161,9 +164,9 @@
               </div>
             </div>
           </div><!-- /.row -->
-          <div class="row" style="padding-top:30px; padding-bottom: 30px; color:black; background-color:rgba(255,193,12, 0.827)">
+          <div class="row animatedParent" style="padding-top:30px; padding-bottom: 30px; color:black; background-color:rgba(255,193,12, 0.827)">
             <div class="col-sm-4">
-              <div class="style-box-1 center-block">
+              <div class="style-box-1 center-block animated bounceInDown">
                 <h2 class="section-title multiple-title" align="center">VISION</h2>
                 <hr style="border-color:black; border-width:5px">
                 <p>To bring the focus of the future leaders towards Sustainable development,
@@ -172,8 +175,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="style-box-1 center-block">
+            <div class="col-sm-4" data-sequence='500'>
+              <div class="style-box-1 center-block animated bounceInDown">
                 <h2 class="section-title multiple-title">MISSION</h2>
                 <hr style="border-color:black; border-width:5px">
                 <p>To develop students for industry-fit technocrats driven by providing conducive
@@ -183,7 +186,7 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="style-box-1 center-block">
+              <div class="style-box-1 center-block animated bounceInDown">
                 <h2 class="section-title multiple-title">GOAL</h2>
                 <hr style="border-color:black; border-width:5px">
                 <p>
@@ -719,6 +722,7 @@
       });
     </script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/third_party/css3_animateIt/js/css3-animate-it.js"></script>
 
 </body>
 
