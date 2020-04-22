@@ -31,6 +31,31 @@
   bottom:50px;
   align-self: center;
   z-index: 99;
+
+
+    border:dashed 0px #000000;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright:20px;
+    -moz-border-radius-bottomleft:20px;
+    -moz-border-radius-bottomright:20px;
+    -webkit-border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+
+
+}
+#intro_heading_box h2
+{
+  font-size: 19px;
+}
+#intro_heading_box h1
+{
+  font-size: 21px;
 }
 @media(max-width:1340px)
 {
