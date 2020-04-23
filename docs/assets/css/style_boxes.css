@@ -2,9 +2,11 @@
 {
   padding:12px;
   border-width: 6px;
-  width:80%;
+  width:82%;
   color:black;
   text-align: center;
+  height: 600px;
+  background-color: rgba(0,0,0, 0.2);
 }
 .style-box-1 > h2
 {
@@ -15,7 +17,14 @@
   font-size: 1em;
   font-weight: 501;
 }
-
+.style-box-1 > figure
+{
+  padding-bottom:10px;
+}
+.style-box-image
+{
+  width:90%; height:150px;
+}
 @media(max-width:1340px)
 {
   .style-box-1
@@ -25,8 +34,21 @@
     border-width: 3px;
     margin-top:10px;
     width:350px;
-    height: 350px;
+    height: 500px;
     margin-bottom:10px;
+  }
+  .style-box-1 > h2
+  {
+    text-align: center;
+  }
+  .style-box-1 > p
+  {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+  .style-box-image
+  {
+    width:90%; height:180px;
   }
 }
 
@@ -38,8 +60,13 @@
     border-color: black;
     border-width: 3px;
     margin-top:10px;
-    width:220px;
+    width:270px;
+    height: 450px;
     margin-bottom:10px;
+  }
+  .style-box-image
+  {
+    height:95%;
   }
 }
 
@@ -51,16 +78,135 @@
     border-color: black;
     border-width: 2px;
     margin-top:10px;
+    width: 100%;
+    height: 500px;
+    margin-bottom:50px;
+  }
+  .style-box-image
+  {
+    height:100px;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 375px) and (orientation : portrait) /* iphones specfic */
+{
+  .style-box-1
+  {
+    height:510px;
+    width: 100%;
+  }
+  .style-box-image
+  {
+    height:210px;
+  }
+}
+
+@media (max-width: 770px) and (orientation:landscape)/* landscape */
+{
+  .style-box-1
+  {
+    height:450px;
+    width: 100%;
+  }
+  .style-box-image
+  {
+    height:210px;
+  }
+}
+
+@media (max-width: 600px) and (orientation:landscape)
+{
+  .style-box-1
+  {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .style-box-image
+  {
+    height:180px;
+  }
+}
+
+
+
+
+
+.style-box-2
+{
+  padding:12px;
+  border-width: 6px;
+  width:82%;
+  color:black;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.2);
+}
+.style-box-2 > h2
+{
+  text-align: center;
+}
+.style-box-2 > p
+{
+  font-size: 1em;
+  font-weight: 501;
+}
+
+@media(max-width:1340px)
+{
+  .style-box-2
+  {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top:10px;
+    width:350px;
+    height: 300px;
+    margin-bottom:10px;
+  }
+  .style-box-2 > h2
+  {
+    text-align: center;
+  }
+  .style-box-2 > p
+  {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .style-box-2
+  {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top:10px;
+    width:310px;
+    height: 320px;
+    margin-bottom:10px;
+  }
+}
+
+@media (max-width: 992px)
+{
+  .style-box-2
+  {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top:10px;
     width: 88%;
     height: 60%;
     margin-bottom:50px;
-
   }
 }
 
 @media (max-width: 600px)
 {
-  .style-box-1
+  .style-box-2
   {
     border-style: solid;
     border-color: black;
