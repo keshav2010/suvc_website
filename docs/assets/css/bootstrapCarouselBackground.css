@@ -49,14 +49,15 @@
 
 
 }
-#intro_heading_box h2
-{
-  font-size: 19px;
-}
 #intro_heading_box h1
 {
-  font-size: 21px;
+  font-size: 4em;
 }
+#intro_heading_box h2
+{
+  font-size: 1.6em;
+}
+
 @media(max-width:1340px)
 {
   #intro_heading_box
@@ -73,7 +74,7 @@
   }
   #intro_heading_box h1
   {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 @media (max-width: 1200px) {
@@ -92,7 +93,7 @@
   }
   #intro_heading_box h1
   {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 
@@ -112,7 +113,7 @@
   }
   #intro_heading_box h1
   {
-    font-size: 23px;
+    font-size: 1.5em;
   }
 
 }
@@ -135,6 +136,6 @@
   }
   #intro_heading_box h1
   {
-    font-size: 14px;
+    font-size: 25px;
   }
 }
