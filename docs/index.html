@@ -10,88 +10,12 @@
     {
         overflow-x: hidden;
     }
-    .pace {
-      -webkit-pointer-events: none;
-      pointer-events: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    .pace-inactive {
-      display: none;
-    }
-
-    .pace .pace-progress {
-      background: #000000;
-      position: fixed;
-      z-index: 2000;
-      top: 0;
-      right: 100%;
-      width: 100%;
-      height: 2px;
-    }
-
-    .pace .pace-progress-inner {
-      display: block;
-      position: absolute;
-      right: 0px;
-      width: 100px;
-      height: 100%;
-      box-shadow: 0 0 10px #000000, 0 0 5px #000000;
-      opacity: 1.0;
-      -webkit-transform: rotate(3deg) translate(0px, -4px);
-      -moz-transform: rotate(3deg) translate(0px, -4px);
-      -ms-transform: rotate(3deg) translate(0px, -4px);
-      -o-transform: rotate(3deg) translate(0px, -4px);
-      transform: rotate(3deg) translate(0px, -4px);
-    }
-
-    .pace .pace-activity {
-      display: block;
-      position: fixed;
-      z-index: 2000;
-      top: 15px;
-      right: 15px;
-      width: 14px;
-      height: 14px;
-      border: solid 2px transparent;
-      border-top-color: #000000;
-      border-left-color: #000000;
-      border-radius: 10px;
-      -webkit-animation: pace-spinner 400ms linear infinite;
-      -moz-animation: pace-spinner 400ms linear infinite;
-      -ms-animation: pace-spinner 400ms linear infinite;
-      -o-animation: pace-spinner 400ms linear infinite;
-      animation: pace-spinner 400ms linear infinite;
-    }
-
-    @-webkit-keyframes pace-spinner {
-      0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-    }
-    @-moz-keyframes pace-spinner {
-      0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
-      100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
-    }
-    @-o-keyframes pace-spinner {
-      0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
-      100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
-    }
-    @-ms-keyframes pace-spinner {
-      0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
-      100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
-    }
-    @keyframes pace-spinner {
-      0% { transform: rotate(0deg); transform: rotate(0deg); }
-      100% { transform: rotate(360deg); transform: rotate(360deg); }
-    }
-
     </style>
 
     <title>SUVC</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="assets/css/pace.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrapCarouselBackground.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
@@ -134,12 +58,12 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#home">HOME</a></li>
-                    <li><a data-scroll href="#speakers">RSTE</a></li>
-                    <li><a data-scroll href="#photos">WORKSHOP</a></li>
-                    <li><a data-scroll href="#about">GALLERY</a></li>
+                    <li class="active"><a data-scroll href="index.html">HOME</a></li>
+                    <li><a href="">RSTE</a></li>
+                    <li><a href="">WORKSHOP</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
                     <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
-                    <li><a data-scroll href="#faq">CONTACT US</a></li>
+                    <li><a data-scroll href="">CONTACT US</a></li>
                     <!--<li><a data-scroll href="#location">REGISTER</a></li>-->
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRNgfyzP8dU9KZcG2UyAFbkl-8GJ3CwuIsMUByH1f4btgNvw/viewform" target="_blank">REGISTER</a></li>
                     <li>
@@ -462,7 +386,7 @@
                 has conducted in coimbatore, TamilNadu with collaboration of hindustan charitable education trust.  </p>
                 <div class="mt20">
                     <button type="submit" class="btn btn-black"
-                        onclick=""
+                        onclick="window.open('assets/content/SUVC_2021_proposal.pdf')"
                         id="registration-submit-btn">More Detail</button>
                 </div>
             </div>
@@ -479,7 +403,7 @@
               </p>
               <div class="mt20">
                   <button type="submit" class="btn btn-black"
-                      onclick=""
+                      onclick="window.open('assets/content/RSTE_TECHNICAL_CLUB_21.pdf')"
                       id="registration-submit-btn">More Detail</button>
               </div>
             </div>
