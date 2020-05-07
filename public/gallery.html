@@ -5,14 +5,6 @@
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <style>
-    html,body
-    {
-        overflow-x: hidden;
-    }
-
-
-    </style>
 
     <title>SUVC</title>
 
@@ -34,8 +26,17 @@
     {
         overflow-x: hidden;
     }
-    </style>
 
+    h2{
+      margin-bottom: 50px;
+      font-family: 'knewave';
+    }
+    img
+    {
+      padding:0px;
+      margin:5px;
+    }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -70,7 +71,7 @@
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="">RSTE</a></li>
                   <li><a href="">WORKSHOP</a></li>
-                  <li class="active"><a href="gallery.html">GALLERY</a></li>
+                  <li class="active"><a data-scroll href="gallery.html">GALLERY</a></li>
                   <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
                   <li><a data-scroll href="">CONTACT US</a></li>
                   <!--<li><a data-scroll href="#location">REGISTER</a></li>-->
@@ -89,46 +90,42 @@
               </ul>
           </div>
       </div><!-- /.container -->
+      <div style="background-color:black; color:white; font-weight:bold; text-align:center;" class="wow fadeInUp">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openLink(event, 'SUVC2018')">SUVC-2018</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SUVC2019')">SUVC-2019</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SUVC2020')">SUVC-2020</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SAP')">SAP</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'VIRTUAL')">VIRTUAL</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'TAV')">TRAINING AND VISITS</button>
+      </div>
   </nav>
 
-  <header id='site-header'  class="site-header valign-center">
-    <div class="container-fluid">
-      <div class='row' style="margin-top:120px; margin-bottom:100px;">
-        <div class='col-sm-12'>
-          <h1 style="font-size:15vh; color:white;" class="wow jackInTheBox">GALLERY</h1>
-        </div>
-      </div>
-    </div>
-  </header>
+  <section id="gallery" class="section gallery" style="background-color:rgb(240,240,240); margin-top:100px">
 
-  <section id="gallery" class="section gallery" style="background-color:rgb(240,240,240)">
-    <div style="background-color:rgba(254,198,3,1); color:black; font-weight:bold; text-align:center">
-      <button class="w3-bar-item w3-button tablink w3-red" onclick="openLink(event, 'SUVC2018')">SUVC-2018</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SUVC2019')">SUVC-2019</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SUVC2020')">SUVC-2020</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'SAP')">SAP</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'VIRTUAL')">VIRTUAL</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'TAV')">TRAINING AND VISITS</button>
-    </div>
 
     <div style="padding-left:10px; padding-right:10px;">
       <div id="SUVC2018" class="w3-container city w3-animate-left" style="display:block;">
         <center><h2 style="font-size:4.5em">SUVC 2018</h2></center>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/1.jpg">
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block  banner_image"
+                  src="assets/images/gallery/suvc2018/suvc2018_1.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/2.jpg">
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2018/suvc2018_2.JPG">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/3.jpg">
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2018/suvc2018_3.png">
             </div>
           </div>
+        </div>
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick="window.open('https://drive.google.com/open?id=1SBCEOtmicP6h1jWesexVStbEm5YL2IUQ')"
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
         </div>
       </div>
 
@@ -136,61 +133,74 @@
         <center><h2 style="font-size:4.5em">SUVC 2019</h2></center>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/1.jpg">
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block  banner_image"
+                  src="assets/images/gallery/suvc2019/suvc2019_1.JPG" style="height:85vh; width:100vw;">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/2.jpg">
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2019/suvc2019_2.JPG">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/3.jpg">
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2019/suvc2019_3.JPG">
             </div>
           </div>
         </div>
-
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick="window.open('https://drive.google.com/open?id=1zQpHcyxnpN1Dy6tccFVIGIhdCUVqSJs7')"
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
+        </div>
       </div>
 
       <div id="SUVC2020" class="w3-container city w3-animate-left" style="display:none">
-        <center><h2 style="font-size:4.5em">SUVC 2020</h2></center>
+        <center><h2 style="font-size:4.5em;">SUVC 2020</h2></center>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/1.jpg">
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block banner_image"
+                  src="assets/images/gallery/suvc2020/suvc2020_1.JPG" style="height:85vh; width:100vw;">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2020/suvc2020_2.JPG">
+            </div>
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2020/suvc2020_3.JPG">
+            </div>
+          </div>
+        </div>
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick="window.open('https://drive.google.com/open?id=1v8c0sTT5D_QU6zLama1lCL93K0N1bNBZ')"
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
+        </div>
+      </div>
+
+      <div id="SAP" class="w3-container city w3-animate-left" style="display:none">
+        <center><h2 style="font-size:4.5em">WORKSHOP & TRAINING</h2></center>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block"
+                  src="assets/images/gallery/suvc2020/suvc2020_1.jpg">
+            </div>
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/2.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/3.jpg">
             </div>
           </div>
         </div>
-
-      </div>
-
-      <div id="SAP" class="w3-container city w3-animate-left" style="display:none">
-        <center><h2 style="font-size:4.5em">SAP</h2></center>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/1.jpg">
-            </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/2.jpg">
-            </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
-                  src="assets/images/speakers/3.jpg">
-            </div>
-          </div>
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick="window.open('https://drive.google.com/open?id=1tw2HCPmskwyGiLlYHQZx-c6FjVgvizl4')"
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
         </div>
       </div>
 
@@ -198,42 +208,50 @@
         <center><h2 style="font-size:4.5em">VIRTUAL</h2></center>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/1.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/2.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/3.jpg">
             </div>
           </div>
         </div>
-
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick=""
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
+        </div>
       </div>
 
       <div id="TAV" class="w3-container city w3-animate-left" style="display:none;">
         <center><h2 style="font-size:4.5em">TRAINING AND VISITS</h2></center>
         <div class='container'>
           <div class='row'>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-12'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/1.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/2.jpg">
             </div>
-            <div class='col-sm-4'>
-              <img alt="" class="img-responsive center-block speaker-image"
+            <div class='col-sm-6'>
+              <img alt="" class="img-responsive center-block"
                   src="assets/images/speakers/3.jpg">
             </div>
           </div>
         </div>
-
+        <div class="mt20" style="text-align:center">
+            <button type="submit" class="btn btn-black"
+                onclick="window.open('https://drive.google.com/open?id=1SBCEOtmicP6h1jWesexVStbEm5YL2IUQ')"
+                id=""> MORE PICTURES <i class="ion-android-arrow-dropright-circle"></i></button>
+        </div>
       </div>
   </div>
   </section>
