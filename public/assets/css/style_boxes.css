@@ -26,6 +26,9 @@
 {
   width:90%; height:150px;
 }
+
+
+
 @media(max-width:1340px)
 {
   .style-box-1
@@ -52,7 +55,7 @@
   {
     width:90%; height:180px;
   }
-}
+} /* end of media */
 
 @media (max-width: 1200px)
 {
