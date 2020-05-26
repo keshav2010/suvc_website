@@ -99,12 +99,7 @@
     <script>
     //get url
       jQuery(document).ready(function($) {
-        if(window.location.hash == "#location")
-        {
-          console.log("movin");
-          $('html, body').animate({scrollTop: $('#location').offset().top}, 'slow');
-          window.reload();
-        }
+
       });
 
     </script>
@@ -902,7 +897,12 @@
             pause: true,
             interval: 4000,
           });
-
+          if(window.location.hash == "#location")
+          {
+            console.log("movin");
+            $('html, body').animate({scrollTop: $('#location').offset().top}, 'slow');
+            window.reload();
+          }
       });
     </script>
 
