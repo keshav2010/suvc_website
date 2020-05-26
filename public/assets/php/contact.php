@@ -12,12 +12,15 @@
 	$program    	= $_POST['program'];
 
 	$message     	= "First Name: $fname, \nLast Name: $lname, \nEmail: $email, \nCell: $cell, \nAddress: $address, \nZip Code: $zip, \nCity: $city, \nProgram: $program.";
-
-	if(mail('example@gmail.com', "Test Sub", $message))
+	echo $message;
+	if(mail('example@gmail.com', "New Form Submission By :"+$fname+')', $message)){
 		$form_data['success'] = true;
-	else
+		echo 'success';
+	}
+	else{
 		$form_data['success'] = false;
-
+		echo 'fail';
+	}
 	echo json_encode($form_data);
 	return;
 ?>
