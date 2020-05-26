@@ -15,6 +15,10 @@
     <title>SUVC</title>
 
     <!-- css -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="assets/js/carousel.js"></script>
+
     <link rel="stylesheet" href="assets/css/pace.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrapCarouselBackground.css">
@@ -91,6 +95,19 @@
 }
 .owl-next:before{ content: ">"; }
     </style>
+
+    <script>
+    //get url
+      jQuery(document).ready(function($) {
+        if(window.location.hash == "#location")
+        {
+          console.log("movin");
+          $('html, body').animate({scrollTop: $('#location').offset().top}, 'slow');
+          window.reload();
+        }
+      });
+
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -726,12 +743,15 @@
                     <h3 class="section-title wow fadeIn">Contact Us</h3>
                     <address class="wow slideInLeft">
                         <p><b>Mr. Prakhar Agarwal </b></p>
-                        <p>RSTE<br>
+                        <p>
+                          RSTE<br>
                           348, Sainik Colony,
                           Pinto Park, Gwalior, <br>
                           Madhya Pradesh 474005 <br>
-                          Phone: +91-9617577301 <br>+91-8770201773<br>
-                          Email: contact@suvcrste.com</p>
+                          Phone: +91-9617577301 <br>
+                          +91-8770201773<br>
+                          Email: contact@suvcrste.com
+                        </p>
                     </address>
                 </div>
                 <div class="col-sm-9">
@@ -852,7 +872,6 @@
 
     <!-- script -->
     <script src="assets/js/pace.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
@@ -864,12 +883,11 @@
     <script>
       new WOW().init();
       jQuery(document).ready(function($) {
-          //get url
-
           $('.counter').counterUp({
               delay: 10,
               time: 1000
           });
+
           $("#testimonial-slider").owlCarousel({
               items:2,
               itemsDesktop:[1000,2],
@@ -884,16 +902,9 @@
             pause: true,
             interval: 4000,
           });
-          if(window.location.hash == "#location")
-          {
-            $('html, body').animate({
-                scrollTop: $('#location').offset().top
-            }, 'slow');
-            window.reload();
-          }
+
       });
     </script>
-    <script src="assets/js/carousel.js"></script>
 
 </body>
 
