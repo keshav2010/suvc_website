@@ -884,6 +884,13 @@
             pause: true,
             interval: 4000,
           });
+          if(window.location.hash == "#location")
+          {
+            $('html, body').animate({
+                scrollTop: $('#location').offset().top
+            }, 'slow');
+            window.reload();
+          }
       });
     </script>
     <script src="assets/js/carousel.js"></script>
